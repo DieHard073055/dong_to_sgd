@@ -1,7 +1,7 @@
 {
-	"name": "Divider PWA",
-	"short_name": "Divider",
-	"start_url": "/",
+	"name": "Dong to SGD",
+	"short_name": "DongToSgd",
+  "start_url": "/dong_to_sgd/",
 	"display": "standalone",
 	"background_color": "#ffffff",
 	"theme_color": "#317EFB",
