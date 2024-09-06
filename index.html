@@ -9,26 +9,69 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
         }
-        input, button {
-            padding: 10px;
-            margin: 10px;
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 15px;
+            font-size: 1.2em;
+            width: 80%;
+            max-width: 400px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 15px;
+            font-size: 1.2em;
+            margin-top: 15px;
+            background-color: #317EFB;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        button:hover {
+            background-color: #1a5bbf;
+        }
+
+        p#result {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 20px;
+            min-height: 30px;
         }
     </style>
 </head>
 <body>
     <h1>Convert Dong to SGD</h1>
-    <input type="number" id="numberInput" placeholder="Enter Dong Amount">
-    <button onclick="divideNumber()">Convert</button>
+    <input type="number" id="numberInput" placeholder="Enter Dong Amount" oninput="divideNumber()">
     <p id="result"></p>
 
     <script>
         function divideNumber() {
             const number = document.getElementById('numberInput').value;
-            const result = number / 18718;
-            document.getElementById('result').innerText = 'Result: ' + result.toFixed(3) + " SGD";
+            if (number) {
+                const result = number / 18718;
+                document.getElementById('result').innerText = 'Result: ' + result.toFixed(3) + " SGD";
+            } else {
+                document.getElementById('result').innerText = '';
+            }
         }
 
         // Register the service worker for PWA
