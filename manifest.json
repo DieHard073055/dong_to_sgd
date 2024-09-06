@@ -1,15 +1,15 @@
 {
-	"name": "Dong to SGD",
-	"short_name": "DongToSgd",
+  "name": "Dong to SGD",
+  "short_name": "DongToSgd",
   "start_url": "/dong_to_sgd/",
-	"display": "standalone",
-	"background_color": "#ffffff",
-	"theme_color": "#317EFB",
-	"icons": [
-		{
-			"src": "icon.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		}
-	]
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#317EFB",
+  "icons": [
+  	{
+  		"src": "icon.png",
+  		"sizes": "192x192",
+  		"type": "image/png"
+  	}
+  ]
 }
